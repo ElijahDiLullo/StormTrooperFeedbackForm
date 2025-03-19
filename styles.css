@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+.sTF{
+    background-color: blue;
+}
+
+form{
+    position:absolute;
+    left:45%;
+    top:20%;
+}
+
+
+label{
+    color: red;
+    background-color: blue;
+}
+.feedbackMessage{
+    size: 50%;
+}
