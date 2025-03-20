@@ -1,6 +1,7 @@
 document.getElementById('sTF').addEventListener('submit',function(e){
     e.preventDefault();//Prevents the form from submitting immediately.
-    alert("Submit button pressed")
+    //alert("Submit button pressed")
+    alert(getElementById("firstName").value)
     let EmailPattern = "/\@/g"
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
@@ -22,12 +23,15 @@ document.getElementById('sTF').addEventListener('submit',function(e){
     else if(email.search(EmailPattern) !== true){
         alert("Please enter a valid Email!")
     }
+    else if (age < 18){
+        alert("Grow up!")
+    }
     else{
         alert("Form submitted.")
     }
 
 
-
+    
 
 }
 
