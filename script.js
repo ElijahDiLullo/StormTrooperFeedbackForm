@@ -1,7 +1,7 @@
 document.getElementById('sTF').addEventListener('submit',function(e){
     e.preventDefault();//Prevents the form from submitting immediately.
-    //alert("Submit button pressed")
-    alert(getElementById("firstName").value)
+    alert("Submit button pressed")
+  
     let EmailPattern = "/\@/g"
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
@@ -13,8 +13,6 @@ document.getElementById('sTF').addEventListener('submit',function(e){
     const zipcode = document.getElementById("zipcode").value;
     const email = document.getElementById("email").value;
     const feedbackMessage = document.getElementById("feedbackMessage").value;
-    alert(firstName +" "+ lastName + ",email: ")
-    email.search(EmailPattern)
 
     if (firstName === '' || lastName === '' || age ==='' || phone === '' || email === ''|| street ===''||
          city ==='' || state ==='' || zipcode ==='' || feedbackMessage ===''){
@@ -23,7 +21,7 @@ document.getElementById('sTF').addEventListener('submit',function(e){
     else if(email.search(EmailPattern) !== true){
         alert("Please enter a valid Email!")
     }
-    else if (age < 18){
+    else if (age <= 17){
         alert("Grow up!")
     }
     else{
